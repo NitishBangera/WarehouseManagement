@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="FileAppender" class="ch.qos.logback.core.FileAppender">
+		<file>warehouse.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%d{MM:dd HH:mm:ss.SSS} [%t] [%level] [%logger{36}] - %msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+	<root level="info">
+		<appender-ref ref="FileAppender" />
+	</root>
+</configuration>

@@ -1,0 +1,15 @@
+warehouse 6
+store 72527273070 White
+store 72527273071 Green
+store 72537113170 Purple
+store 72537113171 Black
+store 72537113172 Black
+store 72537113173 Green
+sell 4
+status
+store 82537113174 Purple
+store 82527273075 White
+product_codes_for_products_with_colour White
+slot_numbers_for_products_with_colour Green
+slot_number_for_product_code 82537113174
+slot_number_for_product_code 82532222174

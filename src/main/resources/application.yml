@@ -1,0 +1,23 @@
+spring:
+  main:
+    banner-mode: "off"
+  datasource:
+    url: jdbc:mariadb://${db.host}:${db.port}/${db.database}
+    username: ${db.username}
+    password: ${db.password}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  session:
+    store-jdbc: jdbc
+    jdbc:
+      initialize-schema: always
+    timeout:
+      seconds: 900
+    
+application:
+  command:
+    store:
+      product-code-length: ${product.code.length:11}
+  input-file-path: ${input.file.path:#{null}}
